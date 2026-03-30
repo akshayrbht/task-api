@@ -9,7 +9,7 @@ let tasks = [
   { id: 2, title: "Build API", completed: false }
 ];
 
-// 🏠 Home
+// 🏠 Home Route
 app.get("/", (req, res) => {
   res.send("📝 Task API Running...");
 });
@@ -76,7 +76,7 @@ app.delete("/tasks/:id", (req, res) => {
 
 
 // ======================
-// 🚀 SERVER
+// 🚀 SERVER START
 // ======================
 
 const PORT = process.env.PORT || 3000;
